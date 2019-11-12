@@ -1,4 +1,0 @@
-roslaunch turtlebot_bringup minimal.launch : connect the turtlebot to the computer
-rostopic echo /mobile_base/events/bumper
-
-167.96.51.63

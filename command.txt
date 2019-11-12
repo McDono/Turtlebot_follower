@@ -1,0 +1,16 @@
+ssh turtlebot@167.96.241.118
+turtlebot
+export ROS_HOSTNAME=localhost
+export ROS_MASTER_URI=http://localhost:11311
+
+roscore
+roslaunch turtlebot_bringup minimal.launch --screen
+
+
+roslaunch turtlebot_bringup 3dsensor.launch
+
+roslaunch turtlebot_rviz_launchers view_robot.launch
+
+roslaunch turtlebot_follower follower.launch
+
+currrently at 2. Writing the Client Node http://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29
